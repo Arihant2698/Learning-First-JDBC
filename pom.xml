@@ -4,7 +4,11 @@
   <artifactId>LearningdemoJDBC</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>LearningdemoJDBC</name>
-  <dependencies>
+   <properties>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  </properties> 
+ <dependencies>
   <dependency>
   <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 
