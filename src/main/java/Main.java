@@ -11,7 +11,7 @@ public class Main {
 	public static String url="jdbc:mysql://localhost:3306/test";
 	public static String username="root";
 	public static String pass="root";
-	public static void readAllUser() throws SQLException {
+	public  void readAllUser() throws SQLException {
 		Connection con = DriverManager.getConnection(url, username, pass);
 		
 		Statement stmt= con.createStatement();
@@ -29,7 +29,7 @@ public class Main {
 		}
 	}
 	
-public static void insertUser(User user) throws SQLException {
+public  void insertUser(User user) throws SQLException {
 //	Class.forName(driver);
 	Connection con = DriverManager.getConnection(url, username, pass);
 		
@@ -47,7 +47,7 @@ public static void insertUser(User user) throws SQLException {
 					
 		}
 
-	public static void UpdateUser(User user) throws SQLException {
+	public  void UpdateUser(User user) throws SQLException {
 		//Class.forName(driver);
 		Connection con = DriverManager.getConnection(url, username, pass);
 		
@@ -64,7 +64,7 @@ public static void insertUser(User user) throws SQLException {
 					
 		}
 
-	public static void DeleteUser(User user) throws SQLException {
+	public  void DeleteUser(User user) throws SQLException {
 	//	Class.forName(driver);
 		Connection con = DriverManager.getConnection(url, username, pass);
 		
